@@ -21,8 +21,6 @@ class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Hide the status bar.
-
-
         binding = ActivityMainBinding.inflate(layoutInflater)   // initialisation of viewbinding object
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)

@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.Epifi" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/black</item>
-        <item name="colorPrimaryVariant">@color/black</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/white_b3</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
         <item name="colorAccent">@color/colorAccent</item>
 
         <!-- Status bar color. -->

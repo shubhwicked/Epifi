@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 
 import androidx.fragment.app.Fragment
 
@@ -16,7 +17,8 @@ import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
 import com.example.epifi.R
 import com.example.epifi.application.EpifiApplication
-import com.example.epifi.databinding.LoginFragmentBinding
+import com.example.epifi.databinding.SigninFragmentBinding
+
 import com.example.epifi.viewmodels.SignInViewModel
 
 
@@ -25,13 +27,13 @@ import com.example.epifi.viewmodels.SignInViewModel
  */
 
 class SignInFragment : Fragment(),  View.OnClickListener {
-    private var firstFragmentBinding: LoginFragmentBinding? = null
+    private var firstFragmentBinding: SigninFragmentBinding? = null
 
     lateinit var epifiApplication: EpifiApplication
 
 
 
-    private val viewModel by navGraphViewModels<SignInViewModel>(R.id.LoginFragment) {
+    private val viewModel by navGraphViewModels<SignInViewModel>(R.id.SignInFragment) {
         defaultViewModelProviderFactory
     }
 
@@ -40,7 +42,7 @@ class SignInFragment : Fragment(),  View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding = LoginFragmentBinding.inflate(inflater, container, false)
+        val binding = SigninFragmentBinding.inflate(inflater, container, false)
         firstFragmentBinding = binding
         epifiApplication = activity?.application as EpifiApplication
 
@@ -49,10 +51,7 @@ class SignInFragment : Fragment(),  View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
     }
-
 
     override fun onStart() {
         super.onStart()
